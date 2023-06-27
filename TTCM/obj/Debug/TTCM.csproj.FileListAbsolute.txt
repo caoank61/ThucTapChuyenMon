@@ -1,0 +1,12 @@
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\bin\Debug\TTCM.exe.config
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\bin\Debug\TTCM.exe
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\bin\Debug\TTCM.pdb
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.csproj.AssemblyReference.cache
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.csproj.SuggestedBindingRedirects.cache
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.Login.resources
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.Properties.Resources.resources
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.Setting.resources
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.csproj.GenerateResource.cache
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.csproj.CoreCompileInputs.cache
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.exe
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.pdb
