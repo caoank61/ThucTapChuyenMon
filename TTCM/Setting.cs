@@ -15,7 +15,6 @@ namespace TTCM
 {
     public partial class Setting : Form
     {
-        public double s1;
         public Setting()
         {
             InitializeComponent();
@@ -24,7 +23,7 @@ namespace TTCM
             double s1;
             String[] Port = SerialPort.GetPortNames();
             foreach (String port in Port)
-                comboBox_COM.Items.Add(port);
+            comboBox_COM.Items.Add(port);
             Control.CheckForIllegalCrossThreadCalls = false;
         }
 
@@ -37,6 +36,7 @@ namespace TTCM
             groupthietbi.Enabled = false;
             button_ngat.Enabled = false;
             btn_Save.Enabled = false;
+            getWeather();
         }
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -105,6 +105,7 @@ namespace TTCM
                 groupcaidat.Enabled = false;
                 caidat1.Enabled = false;
                 btn_Save.Enabled = false;
+                caidat1.Enabled = false;
                 WeatherInfo.root weatherInfo = new WeatherInfo.root();
                 getWeather();
                 using (WebClient web = new WebClient())
@@ -135,6 +136,7 @@ namespace TTCM
                 {
                     groupcaidat.Enabled = true;
                     btn_Save.Enabled = true;
+                    caidat1.Enabled = true;
                     MessageBox.Show("Đã chọn chế độ Manual");
                 }
         }
@@ -172,6 +174,13 @@ namespace TTCM
             Login login = new Login();
             this.Hide();
             login.ShowDialog();
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            InfoWeather infoWeather = new InfoWeather();    
+            this.Hide();
+            infoWeather.ShowDialog();
         }
     }
 }

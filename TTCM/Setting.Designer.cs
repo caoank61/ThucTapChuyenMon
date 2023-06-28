@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtdulieu = new System.Windows.Forms.TextBox();
             this.caidat1 = new System.Windows.Forms.TextBox();
@@ -42,6 +43,7 @@
             this.groupcaidat = new System.Windows.Forms.GroupBox();
             this.btn_Save = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -61,18 +63,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox_COM = new System.Windows.Forms.ComboBox();
             this.groupthietbi = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txttrangthai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lb_nhietdo = new System.Windows.Forms.Label();
+            this.lb_thanhpho = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.lb = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lb_thanhpho = new System.Windows.Forms.Label();
-            this.lb_nhietdo = new System.Windows.Forms.Label();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.groupdulieu.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,8 +83,8 @@
             this.groupchedo.SuspendLayout();
             this.groupketnoi.SuspendLayout();
             this.groupthietbi.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,6 +145,15 @@
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(216, 42);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 22);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "°C";
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -175,12 +185,12 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(959, 497);
+            this.button3.Location = new System.Drawing.Point(973, 502);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(89, 41);
             this.button3.TabIndex = 15;
-            this.button3.Text = "Thoát";
+            this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -239,6 +249,15 @@
             this.groupBox2.Size = new System.Drawing.Size(299, 91);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(239, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(31, 22);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "°C";
             // 
             // label3
             // 
@@ -391,7 +410,7 @@
             this.button_ngat.Name = "button_ngat";
             this.button_ngat.Size = new System.Drawing.Size(133, 41);
             this.button_ngat.TabIndex = 4;
-            this.button_ngat.Text = "Ngắt kết Nối";
+            this.button_ngat.Text = "Disconnect";
             this.button_ngat.UseVisualStyleBackColor = false;
             this.button_ngat.Click += new System.EventHandler(this.button_ngat_Click);
             // 
@@ -403,7 +422,7 @@
             this.button_ketnoi.Name = "button_ketnoi";
             this.button_ketnoi.Size = new System.Drawing.Size(127, 41);
             this.button_ketnoi.TabIndex = 1;
-            this.button_ketnoi.Text = "Kết Nối";
+            this.button_ketnoi.Text = "Connect";
             this.button_ketnoi.UseVisualStyleBackColor = false;
             this.button_ketnoi.Click += new System.EventHandler(this.button_ketnoi_Click);
             // 
@@ -457,6 +476,17 @@
             this.groupthietbi.TabStop = false;
             this.groupthietbi.Text = "Thiết bị";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox3.Controls.Add(this.txttrangthai);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(20, 39);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(299, 119);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            // 
             // txttrangthai
             // 
             this.txttrangthai.Location = new System.Drawing.Point(158, 39);
@@ -476,15 +506,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Trạng thái";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(216, 42);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 22);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "°C";
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -496,17 +517,6 @@
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "OpenWeather";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox3.Controls.Add(this.txttrangthai);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Location = new System.Drawing.Point(20, 39);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(299, 119);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
             // 
             // groupBox5
             // 
@@ -524,41 +534,14 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin nhiệt độ";
             // 
-            // label
+            // lb_nhietdo
             // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(216, 69);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(31, 22);
-            this.label.TabIndex = 24;
-            this.label.Text = "°C";
-            // 
-            // lb
-            // 
-            this.lb.AutoSize = true;
-            this.lb.Location = new System.Drawing.Point(8, 30);
-            this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(105, 22);
-            this.lb.TabIndex = 23;
-            this.lb.Text = "Thành Phố:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 69);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 22);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Nhiệt độ:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(239, 45);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 22);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "°C";
+            this.lb_nhietdo.AutoSize = true;
+            this.lb_nhietdo.Location = new System.Drawing.Point(119, 69);
+            this.lb_nhietdo.Name = "lb_nhietdo";
+            this.lb_nhietdo.Size = new System.Drawing.Size(60, 22);
+            this.lb_nhietdo.TabIndex = 27;
+            this.lb_nhietdo.Text = "_____";
             // 
             // lb_thanhpho
             // 
@@ -570,14 +553,44 @@
             this.lb_thanhpho.TabIndex = 26;
             this.lb_thanhpho.Text = "_______________";
             // 
-            // lb_nhietdo
+            // label6
             // 
-            this.lb_nhietdo.AutoSize = true;
-            this.lb_nhietdo.Location = new System.Drawing.Point(119, 69);
-            this.lb_nhietdo.Name = "lb_nhietdo";
-            this.lb_nhietdo.Size = new System.Drawing.Size(90, 22);
-            this.lb_nhietdo.TabIndex = 27;
-            this.lb_nhietdo.Text = "________";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 22);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Nhiệt độ:";
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(185, 69);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(23, 22);
+            this.label.TabIndex = 24;
+            this.label.Text = "C";
+            // 
+            // lb
+            // 
+            this.lb.AutoSize = true;
+            this.lb.Location = new System.Drawing.Point(8, 30);
+            this.lb.Name = "lb";
+            this.lb.Size = new System.Drawing.Size(105, 22);
+            this.lb.TabIndex = 23;
+            this.lb.Text = "Thành Phố:";
+            // 
+            // btn_Back
+            // 
+            this.btn_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btn_Back.Location = new System.Drawing.Point(27, 507);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(89, 41);
+            this.btn_Back.TabIndex = 23;
+            this.btn_Back.Text = "Back";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // Setting
             // 
@@ -585,6 +598,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(208)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(1074, 551);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupthietbi);
             this.Controls.Add(this.groupdulieu);
@@ -610,9 +624,9 @@
             this.groupketnoi.ResumeLayout(false);
             this.groupketnoi.PerformLayout();
             this.groupthietbi.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
@@ -665,5 +679,6 @@
         private System.Windows.Forms.Label lb_thanhpho;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lb_nhietdo;
+        private System.Windows.Forms.Button btn_Back;
     }
 }

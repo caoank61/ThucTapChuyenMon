@@ -29,3 +29,4 @@ D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.csproj.CoreCompileInputs.cache
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.csproj.CopyComplete
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.exe
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.pdb
+D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.InfoWeather.resources

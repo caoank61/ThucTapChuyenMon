@@ -35,7 +35,7 @@ namespace TTCM
             else
             {
                 SqlConnection conn = new SqlConnection();
-                string strConn = "Data Source=DESKTOP-4SL06A4;Initial Catalog=SweetHome;Integrated Security=True"; string query = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password";
+                string strConn = "Data Source=DESKTOP-4SL06A4;Initial Catalog=SweetHome;Integrated Security=True";
                 string username = txtusn.Text;
                 string password = txtpw.Text;
                 string sql = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password";
@@ -50,10 +50,10 @@ namespace TTCM
 
                         if (count > 0)
                         {
-                            Setting setting = new Setting();
-                            MessageBox.Show("Đăng nhập thành công!");
+                            InfoWeather infoWeather = new InfoWeather();
+                            MessageBox.Show("Welcome to Home Sweet Home!");
                             this.Hide();
-                            setting.ShowDialog();
+                            infoWeather.ShowDialog();
                         }
                         else
                         {
