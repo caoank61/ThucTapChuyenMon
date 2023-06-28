@@ -34,6 +34,7 @@ namespace TTCM
             groupcaidat.Enabled = false;    
             groupthietbi.Enabled = false;
             button_ngat.Enabled = false;
+            btn_Save.Enabled = false;
         }
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -101,7 +102,8 @@ namespace TTCM
                 MessageBox.Show("Đã chọn chế độ Auto");
                 groupcaidat.Enabled = false;
                 caidat1.Enabled = false;    
-                btn_Save.Enabled = false;   
+                btn_Save.Enabled = false;
+                
             }
             else
             {

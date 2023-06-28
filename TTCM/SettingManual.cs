@@ -23,7 +23,7 @@ namespace TTCM
         {
             using (WebClient web = new WebClient())
             {
-                string url = String.Format("https://api.openweathermap.org/data/3.0/onecall?lat=10.75&lon=106.6667&exclude={part}&appid=ec491fdc2b690a4af777}&units=metric&cnt=6");
+                string url = String.Format("https://api.openweathermap.org/data/2.5/weather?lat=10.8333&lon=106.66679&appid=ec491fdc2b690a4af7775606317e84e3&units=metric&cnt=6");
                 var json = web.DownloadString(url);
                 var result = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
                 WeatherInfo.root outPut = result;
