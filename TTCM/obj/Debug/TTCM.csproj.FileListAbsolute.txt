@@ -10,3 +10,7 @@ C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.csproj.Gen
 C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.csproj.CoreCompileInputs.cache
 C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.exe
 C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.pdb
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.csproj.CopyComplete
+C:\Users\nca14\OneDrive\Máy tính\TTCM\TTCM\TTCM\TTCM\obj\Debug\TTCM.SettingManual.resources

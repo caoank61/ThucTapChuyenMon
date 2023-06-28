@@ -63,6 +63,7 @@
             this.groupthietbi = new System.Windows.Forms.GroupBox();
             this.txttrangthai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupdulieu.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -463,12 +464,23 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Trạng thái";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(425, 480);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 22;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Setting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(208)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1068, 537);
+            this.ClientSize = new System.Drawing.Size(1407, 641);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.groupthietbi);
             this.Controls.Add(this.groupdulieu);
             this.Controls.Add(this.button3);
@@ -534,5 +546,6 @@
         private System.Windows.Forms.GroupBox groupthietbi;
         private System.Windows.Forms.TextBox txttrangthai;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button4;
     }
 }

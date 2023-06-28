@@ -27,9 +27,5 @@ namespace TTCM
             this.Email = Email;
             this.Address = Address;
         }
-
-        public User()
-        {
-        }
     }
 }

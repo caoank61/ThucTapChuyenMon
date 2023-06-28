@@ -33,6 +33,7 @@ namespace TTCM
             groupdulieu.Enabled = false;    
             groupcaidat.Enabled = false;    
             groupthietbi.Enabled = false;
+            button_ngat.Enabled = false;
         }
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -87,6 +88,8 @@ namespace TTCM
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DialogResult dg = MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
             Application.Exit();
         }
 
@@ -97,6 +100,8 @@ namespace TTCM
             {
                 MessageBox.Show("Đã chọn chế độ Auto");
                 groupcaidat.Enabled = false;
+                caidat1.Enabled = false;    
+                btn_Save.Enabled = false;   
             }
             else
             {
@@ -121,9 +126,10 @@ namespace TTCM
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            
+            SettingManual settingManual = new SettingManual();
+            settingManual.ShowDialog();
         }
     }
 }
