@@ -63,12 +63,6 @@
     <Compile Include="Setting.Designer.cs">
       <DependentUpon>Setting.cs</DependentUpon>
     </Compile>
-    <Compile Include="SettingManual.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SettingManual.Designer.cs">
-      <DependentUpon>SettingManual.cs</DependentUpon>
-    </Compile>
     <Compile Include="SweetHomeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,9 +85,6 @@
     </Compile>
     <EmbeddedResource Include="Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SettingManual.resx">
-      <DependentUpon>SettingManual.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

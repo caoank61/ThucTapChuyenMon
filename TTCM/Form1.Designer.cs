@@ -35,7 +35,6 @@
             this.btnlogin = new System.Windows.Forms.Button();
             this.txtpw = new System.Windows.Forms.TextBox();
             this.txtusn = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbshowpw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -111,22 +110,12 @@
             this.txtusn.Size = new System.Drawing.Size(250, 22);
             this.txtusn.TabIndex = 7;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(96, 458);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "label1";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(208)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(951, 509);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pbshowpw);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -155,7 +144,6 @@
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.TextBox txtpw;
         private System.Windows.Forms.TextBox txtusn;
-        private System.Windows.Forms.Label label1;
     }
 }
 

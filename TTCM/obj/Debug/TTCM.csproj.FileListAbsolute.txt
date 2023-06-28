@@ -24,7 +24,6 @@ D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.csproj.SuggestedBindingRedirects.cache
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.Login.resources
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.Properties.Resources.resources
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.Setting.resources
-D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.SettingManual.resources
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.csproj.GenerateResource.cache
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.csproj.CoreCompileInputs.cache
 D:\ThucTapChuyenMon\TTCM\obj\Debug\TTCM.csproj.CopyComplete

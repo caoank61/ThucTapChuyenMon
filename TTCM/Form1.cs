@@ -52,6 +52,7 @@ namespace TTCM
                         {
                             Setting setting = new Setting();
                             MessageBox.Show("Đăng nhập thành công!");
+                            this.Hide();
                             setting.ShowDialog();
                         }
                         else

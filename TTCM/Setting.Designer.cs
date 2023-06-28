@@ -63,7 +63,16 @@
             this.groupthietbi = new System.Windows.Forms.GroupBox();
             this.txttrangthai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label = new System.Windows.Forms.Label();
+            this.lb = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lb_thanhpho = new System.Windows.Forms.Label();
+            this.lb_nhietdo = new System.Windows.Forms.Label();
             this.groupdulieu.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -73,6 +82,9 @@
             this.groupchedo.SuspendLayout();
             this.groupketnoi.SuspendLayout();
             this.groupthietbi.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // serialPort1
@@ -120,6 +132,7 @@
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox7.Controls.Add(this.label5);
             this.groupBox7.Controls.Add(this.label14);
             this.groupBox7.Controls.Add(this.txtdulieu);
             this.groupBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -127,10 +140,9 @@
             this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox7.Size = new System.Drawing.Size(269, 91);
+            this.groupBox7.Size = new System.Drawing.Size(297, 91);
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Slave 1";
             // 
             // label14
             // 
@@ -152,7 +164,7 @@
             // 
             // caidat1
             // 
-            this.caidat1.Location = new System.Drawing.Point(116, 46);
+            this.caidat1.Location = new System.Drawing.Point(132, 38);
             this.caidat1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.caidat1.Name = "caidat1";
             this.caidat1.Size = new System.Drawing.Size(100, 30);
@@ -182,6 +194,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // groupcaidat
             // 
@@ -194,7 +207,7 @@
             this.groupcaidat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupcaidat.Name = "groupcaidat";
             this.groupcaidat.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupcaidat.Size = new System.Drawing.Size(335, 222);
+            this.groupcaidat.Size = new System.Drawing.Size(335, 204);
             this.groupcaidat.TabIndex = 19;
             this.groupcaidat.TabStop = false;
             this.groupcaidat.Text = "Tuỳ Chỉnh Nhiệt Độ";
@@ -203,7 +216,7 @@
             // 
             this.btn_Save.BackColor = System.Drawing.Color.Aquamarine;
             this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btn_Save.Location = new System.Drawing.Point(111, 164);
+            this.btn_Save.Location = new System.Drawing.Point(125, 146);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(127, 41);
@@ -215,6 +228,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.caidat1);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,20 +236,19 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(269, 105);
+            this.groupBox2.Size = new System.Drawing.Size(299, 91);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Slave 1";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 49);
+            this.label3.Location = new System.Drawing.Point(19, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 20);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Cảm biến 1";
+            this.label3.Text = "Nhiệt độ ";
             // 
             // groupBox4
             // 
@@ -433,21 +446,20 @@
             // groupthietbi
             // 
             this.groupthietbi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.groupthietbi.Controls.Add(this.txttrangthai);
-            this.groupthietbi.Controls.Add(this.label4);
+            this.groupthietbi.Controls.Add(this.groupBox3);
             this.groupthietbi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.groupthietbi.Location = new System.Drawing.Point(729, 340);
+            this.groupthietbi.Location = new System.Drawing.Point(729, 312);
             this.groupthietbi.Margin = new System.Windows.Forms.Padding(4);
             this.groupthietbi.Name = "groupthietbi";
             this.groupthietbi.Padding = new System.Windows.Forms.Padding(4);
-            this.groupthietbi.Size = new System.Drawing.Size(335, 94);
+            this.groupthietbi.Size = new System.Drawing.Size(335, 170);
             this.groupthietbi.TabIndex = 21;
             this.groupthietbi.TabStop = false;
             this.groupthietbi.Text = "Thiết bị";
             // 
             // txttrangthai
             // 
-            this.txttrangthai.Location = new System.Drawing.Point(136, 39);
+            this.txttrangthai.Location = new System.Drawing.Point(158, 39);
             this.txttrangthai.Margin = new System.Windows.Forms.Padding(4);
             this.txttrangthai.Name = "txttrangthai";
             this.txttrangthai.Size = new System.Drawing.Size(39, 38);
@@ -457,30 +469,123 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F);
-            this.label4.Location = new System.Drawing.Point(39, 50);
+            this.label4.Location = new System.Drawing.Point(29, 46);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Trạng thái";
             // 
-            // button4
+            // label5
             // 
-            this.button4.Location = new System.Drawing.Point(425, 480);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(216, 42);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 22);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "°C";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.groupBox5);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Location = new System.Drawing.Point(377, 312);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(335, 179);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "OpenWeather";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox3.Controls.Add(this.txttrangthai);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(20, 39);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(299, 119);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox5.Controls.Add(this.lb_nhietdo);
+            this.groupBox5.Controls.Add(this.lb_thanhpho);
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.label);
+            this.groupBox5.Controls.Add(this.lb);
+            this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(20, 37);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(297, 121);
+            this.groupBox5.TabIndex = 0;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Thông tin nhiệt độ";
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(216, 69);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(31, 22);
+            this.label.TabIndex = 24;
+            this.label.Text = "°C";
+            // 
+            // lb
+            // 
+            this.lb.AutoSize = true;
+            this.lb.Location = new System.Drawing.Point(8, 30);
+            this.lb.Name = "lb";
+            this.lb.Size = new System.Drawing.Size(105, 22);
+            this.lb.TabIndex = 23;
+            this.lb.Text = "Thành Phố:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 22);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Nhiệt độ:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(239, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(31, 22);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "°C";
+            // 
+            // lb_thanhpho
+            // 
+            this.lb_thanhpho.AutoSize = true;
+            this.lb_thanhpho.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lb_thanhpho.Location = new System.Drawing.Point(119, 29);
+            this.lb_thanhpho.Name = "lb_thanhpho";
+            this.lb_thanhpho.Size = new System.Drawing.Size(160, 22);
+            this.lb_thanhpho.TabIndex = 26;
+            this.lb_thanhpho.Text = "_______________";
+            // 
+            // lb_nhietdo
+            // 
+            this.lb_nhietdo.AutoSize = true;
+            this.lb_nhietdo.Location = new System.Drawing.Point(119, 69);
+            this.lb_nhietdo.Name = "lb_nhietdo";
+            this.lb_nhietdo.Size = new System.Drawing.Size(90, 22);
+            this.lb_nhietdo.TabIndex = 27;
+            this.lb_nhietdo.Text = "________";
             // 
             // Setting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(208)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1407, 641);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(1074, 551);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupthietbi);
             this.Controls.Add(this.groupdulieu);
             this.Controls.Add(this.button3);
@@ -505,7 +610,11 @@
             this.groupketnoi.ResumeLayout(false);
             this.groupketnoi.PerformLayout();
             this.groupthietbi.ResumeLayout(false);
-            this.groupthietbi.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -546,6 +655,15 @@
         private System.Windows.Forms.GroupBox groupthietbi;
         private System.Windows.Forms.TextBox txttrangthai;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label lb;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lb_thanhpho;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lb_nhietdo;
     }
 }
