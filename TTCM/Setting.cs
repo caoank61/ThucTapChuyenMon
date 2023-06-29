@@ -55,6 +55,7 @@ namespace TTCM
                 serialPort1.Open();
                 button_ketnoi.Enabled = false;
                 button_ngat.Enabled = true;
+                caidat1.Enabled = false;
                 if (button_ngat.Enabled)
                 {
                     groupdulieu.Enabled = false;

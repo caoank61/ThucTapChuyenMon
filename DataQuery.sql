@@ -1,14 +1,11 @@
 CREATE DATABASE SweetHome;
 use SweetHome;
 CREATE TABLE users (
-	id INT NOT NULL,
+  id INT NOT NULL,
   username VARCHAR(32) NOT NULL,
-  
   password VARCHAR(64) NOT NULL,
-  full_name NVARCHAR(64) NOT NULL,
-  phonenumber VARCHAR(10) NOT NULL,
-  email VARCHAR(64) NOT NULL,
-  address VARCHAR(128) NOT NULL,
   PRIMARY KEY (username)
 );
+Insert Into users (id, username, password)
+Values (1, 'nguyencaoan', 'cnttk61')
 Drop table users
