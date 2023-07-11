@@ -85,9 +85,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(403, 65);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 20);
+            this.label3.Size = new System.Drawing.Size(45, 20);
             this.label3.TabIndex = 3;
-            this.label3.Text = "___";
+            this.label3.Text = "____";
             // 
             // label4
             // 
@@ -174,11 +174,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(445, 65);
+            this.label7.Location = new System.Drawing.Point(449, 65);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 20);
+            this.label7.Size = new System.Drawing.Size(28, 20);
             this.label7.TabIndex = 14;
-            this.label7.Text = "C";
+            this.label7.Text = "°C";
             // 
             // label13
             // 

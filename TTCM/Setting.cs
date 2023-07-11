@@ -36,6 +36,7 @@ namespace TTCM
             groupthietbi.Enabled = false;
             button_ngat.Enabled = false;
             btn_Save.Enabled = false;
+            txttrangthai.BackColor = Color.Red;
             getWeather();
         }
 
@@ -60,7 +61,7 @@ namespace TTCM
                 {
                     groupdulieu.Enabled = false;
                     groupchedo.Enabled = true;
-                    groupcaidat.Enabled = true;
+                    groupcaidat.Enabled = false;
                 }
                 MessageBox.Show("Đã Kết Nối");
             }
@@ -80,7 +81,6 @@ namespace TTCM
                 button_ngat.Enabled = false;
                 groupdulieu.Enabled = false;
                 groupchedo.Enabled = false;
-
                 groupcaidat.Enabled = false;
                 MessageBox.Show("Đã Ngắt Kết Nối");
             }
